@@ -12,6 +12,8 @@ public class Program {
 	public static void main(String[] args) {
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
+		Seller seller = sellerDao.findByID(3);
+		System.out.print(seller);
 	}
 
 }
